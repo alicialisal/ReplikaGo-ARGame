@@ -10,24 +10,34 @@ public class TapToContinueTour : MonoBehaviour
 
     [Header("Fade")]
     [SerializeField] float fadeDuration = 0.4f;
-
+    [SerializeField] GameObject missionUI; // Assign MissionUI GameObject
     private int currentIndex = 0;
     private bool isFading = false;
 
     void Start()
     {
+        // PlayerPrefs.DeleteAll();
+        // PlayerPrefs.Save();
+
         // Matikan semua image dulu
         foreach (var img in tutorialImages)
             img.gameObject.SetActive(false);
-
-        // Mulai di image pertama
-        ShowImage(currentIndex);
+        
+        if (PlayerPrefs.GetInt("tourDone", 0) == 0) {
+            // Mulai di image pertama
+            ShowImage(currentIndex);
+        }
+        else
+        {
+            missionUI.SetActive(true);
+        }
     }
 
     void Update()
     {
-        var ts = Touchscreen.current;
-        if (ts != null && ts.primaryTouch.press.wasPressedThisFrame)
+        if (PlayerPrefs.GetInt("tourDone", 0) == 1) return;
+
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
         {
             NextImage();
         }
@@ -45,7 +55,16 @@ public class TapToContinueTour : MonoBehaviour
             // Terakhir → hilangkan
             StartCoroutine(FadeOutImage(tutorialImages[currentIndex]));
             Debug.Log("Tutorial selesai!");
+
+            PlayerPrefs.SetInt("tourDone", 1);
+            PlayerPrefs.Save();
+
+            this.enabled = false;
+            // Aktifkan MissionUI
+            missionUI.SetActive(true);
         }
+        
+        Debug.Log(PlayerPrefs.GetInt("tourDone", 0));
     }
 
     void ShowImage(int index)
