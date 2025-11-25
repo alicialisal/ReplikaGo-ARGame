@@ -16,8 +16,8 @@ public class TapToContinueTour : MonoBehaviour
 
     void Start()
     {
-        // PlayerPrefs.DeleteAll();
-        // PlayerPrefs.Save();
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
 
         // Matikan semua image dulu
         foreach (var img in tutorialImages)
