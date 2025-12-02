@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.3.1">
+        <ModelTarget name="gandrang" targetId="86da07bd4ec44e2bb35aaf237da1b361" version="14.0" toolVersion="v7.3.1" bbox="-0.100464 0.055116 -0.0500977 0.0997313 0.185355 0.0500488" trackingMode="car" upVector="1.0 0.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="gandrang" assemblyId="811b5b5dee1f4e8fbe5fc3a5d60f0534">
+        <Part name="gandrang" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>

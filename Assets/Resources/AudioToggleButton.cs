@@ -22,16 +22,11 @@ public class AudioToggleButton : MonoBehaviour
 
     public void ToggleAudio()
     {
-        isMuted = !isMuted;
+        isMuted = AudioManager.Instance.ToggleMute();
 
-        // Toggle slash visibility
-        targetAlpha = isMuted ? 1f : 0f;
+        float targetAlpha = isMuted ? 1f : 0f;
         StopAllCoroutines();
         StartCoroutine(FadeSlash(targetAlpha));
-
-        // Toggle audio if assigned
-        if (audioSource != null)
-            audioSource.mute = isMuted;
     }
 
     private System.Collections.IEnumerator FadeSlash(float target)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QCARConfig>
+    <Tracking>
+        <ModelTarget name="gandrang" trackingMode="car" motionHint="adaptive" upVector="1.0 0.0 0.0" optimizeTrackingFor="default"></ModelTarget>
+    </Tracking>
+    <Assembly name="gandrang" assemblyId="811b5b5dee1f4e8fbe5fc3a5d60f0534">
+        <Part name="gandrang" translation="0 0 0" rotation="AD: 0 0 1 0"></Part>
+        <EntryPoint name="(none)" trained="yes"></EntryPoint>
+    </Assembly>
+</QCARConfig>

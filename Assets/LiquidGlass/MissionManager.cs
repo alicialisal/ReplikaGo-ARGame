@@ -7,6 +7,7 @@ public class MissionManager : MonoBehaviour
     public Button acceptButton;
 
     private int currentMission;
+    public GameObject bottomSheetObject;
     public BottomSheetController bottomSheet;
 
     [SerializeField] GameObject tutorialManager; // Assign TutorialManager GameObject
@@ -22,6 +23,7 @@ public class MissionManager : MonoBehaviour
         }
         else {
             // jika tur sudah selesai, baru tampilkan misi
+            Debug.Log("Tour sudah selesai. Memulai Misi");
             currentMission = PlayerPrefs.GetInt("currentMission", 0);
             ShowMission(currentMission);
 
@@ -33,7 +35,6 @@ public class MissionManager : MonoBehaviour
                 // Misi sedang berjalan, sembunyikan gambar misi dan tombol terima
                 HideMission();
             }
-            Debug.Log("Tour sudah selesai. Memulai Misi");
         }
     }
 
@@ -63,6 +64,7 @@ public class MissionManager : MonoBehaviour
         PlayerPrefs.SetInt("missionAccepted", 1);
         PlayerPrefs.Save();
 
+        bottomSheetObject.SetActive(true);
         // Tampilkan bottom sheet versi kecil (collapsed)
         bottomSheet.ShowCollapsed();
 
