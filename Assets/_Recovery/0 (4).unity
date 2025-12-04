@@ -775,7 +775,6 @@ MonoBehaviour:
   - {fileID: 7233622411653396662, guid: dbc23cc21d7e90d4aa6d96cdf9a725bf, type: 3}
   spawnParent: {fileID: 330027547}
   spawnOffset: {x: 0, y: 0.2, z: 0}
-  scaleFactor: 30
 --- !u!114 &330027549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1354,11 +1353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c19cba13669d4348b2c27b5815e4fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissionManager
-  missionImages: []
-  acceptButton: {fileID: 0}
-  bottomSheetObject: {fileID: 0}
-  bottomSheet: {fileID: 0}
-  tutorialManager: {fileID: 0}
 --- !u!1 &708317970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,11 +2077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2f5cf9a811b41b3ab8f2919f30e134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BottomSheetController
-  sheet: {fileID: 0}
-  collapsedY: -1348
-  expandedY: 0
-  smoothSpeed: 20
-  dragThreshold: 15
 --- !u!1 &1310133661
 GameObject:
   m_ObjectHideFlags: 0
