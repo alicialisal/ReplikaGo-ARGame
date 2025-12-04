@@ -40,7 +40,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -48,7 +48,7 @@
           {
             "name": "AudioClip",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -56,7 +56,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -70,7 +70,7 @@
           {
             "name": "AudioResource",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -78,7 +78,7 @@
           {
             "name": "AudioSource",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -121,7 +121,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -141,7 +141,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -161,7 +161,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -175,7 +175,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -207,7 +207,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -239,7 +239,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -253,7 +253,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -261,7 +261,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -269,7 +269,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -277,7 +277,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -285,7 +285,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -299,7 +299,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -307,7 +307,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -345,7 +345,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -359,7 +359,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -391,7 +391,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -417,7 +417,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -888,7 +888,7 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -902,7 +902,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1278,7 +1278,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1327,7 +1327,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1335,7 +1335,7 @@
           {
             "name": "CanvasGroup",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1343,7 +1343,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/tes setelah model target.unity"
+              "Assets/Scenes/cobadalam1database.unity"
             ],
             "dependencyType": 0,
             "icon": null
