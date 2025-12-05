@@ -527,7 +527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109733317}
-  - component: {fileID: 109733318}
+  - component: {fileID: 109733319}
   m_Layer: 5
   m_Name: Quiz
   m_TagString: Untagged
@@ -563,7 +563,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -112}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &109733318
+--- !u!114 &109733319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -572,36 +572,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 109733316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bccfcf5bcfa3d624c9727fc494c24844, type: 3}
+  m_Script: {fileID: 11500000, guid: eb0d761bdb5e13044b3994e91c8ddfba, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExperienceManager
-  experienceCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 3
-      value: 1000
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  levelText: {fileID: 0}
-  experienceText: {fileID: 0}
-  experienceFill: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::QuizManager
+  bgImage: {fileID: 660182862}
+  judulText: {fileID: 1421962025}
+  petunjuk: {fileID: 1579439548}
+  pertanyaanText: {fileID: 1247833635}
+  optionAButton: {fileID: 554054943}
+  optionBButton: {fileID: 1236824311}
+  optionCButton: {fileID: 1344828203}
+  optionDButton: {fileID: 218381844}
+  submitButton: {fileID: 1674715823}
+  optionAText: {fileID: 1511711698}
+  optionBText: {fileID: 2087723922}
+  optionCText: {fileID: 2133959255}
+  optionDText: {fileID: 342746606}
+  bgNormal: {fileID: 21300000, guid: f5d8e241cdc000546b9a2e988ffba75a, type: 3}
+  bgSelected: {fileID: 21300000, guid: 0ddd26ff8de75cb439a6358b7b985ea0, type: 3}
+  bgCorrect: {fileID: 21300000, guid: b5ba7c89ce1dddb41b7e13b4e87d67bc, type: 3}
+  bgWrong: {fileID: 21300000, guid: 1f676c85e8e54d54c941b0c61a1fab1b, type: 3}
+  modelTargets:
+  - modelName: Tatarapang Case
+    questions:
+    - question: Apa fungsi utama keris dalam budaya Makassar pada masa kerajaan?
+      optionA: Alat Berburu
+      optionB: Simbol status dan kekuasaan
+      optionC: Alat Masak
+      optionD: Instrumen Musik
+      correctAnswerIndex: 1
 --- !u!1001 &155834386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,7 +893,7 @@ MonoBehaviour:
   - {fileID: 1515741393}
   - {fileID: 1423662457}
   fadeDuration: 0.4
-  missionUI: {fileID: 0}
+  quizUI: {fileID: 109733316}
 --- !u!1 &245437761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,7 +1043,7 @@ GameObject:
   - component: {fileID: 330027545}
   - component: {fileID: 330027548}
   m_Layer: 0
-  m_Name: ModelTarget
+  m_Name: Tatarapang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2486,8 +2485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0.000061035156}
-  m_SizeDelta: {x: 71.091, y: 71.091}
+  m_AnchoredPosition: {x: -0.0000085831, y: 0.00002718}
+  m_SizeDelta: {x: 82.502, y: 82.502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836348109
 MonoBehaviour:
@@ -2819,7 +2818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 175}
+  m_AnchoredPosition: {x: 13.002, y: 170}
   m_SizeDelta: {x: 489.5, y: 153.724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247833635
@@ -3287,8 +3286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147, y: -163.54004}
-  m_SizeDelta: {x: 130.741, y: 130.73999}
+  m_AnchoredPosition: {x: 137, y: -163.54}
+  m_SizeDelta: {x: 156.331, y: 156.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354335024
 MonoBehaviour:
@@ -3403,68 +3402,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370551969}
   m_CullTransparentMesh: 1
---- !u!1001 &1376225128
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1456191992}
-    m_Modifications:
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0023099184
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0205
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6209626481866680225, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-      propertyPath: m_Name
-      value: gandrang
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
---- !u!4 &1376225129 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5536138121856929294, guid: 8c66f842941b94237b4d58758bf772b7, type: 3}
-  m_PrefabInstance: {fileID: 1376225128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1421962023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,7 +3427,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421962023}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3499,7 +3436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.998973, y: 464.99997}
+  m_AnchoredPosition: {x: 13.001, y: 453}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421962025
@@ -3678,149 +3615,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423662455}
   m_CullTransparentMesh: 1
---- !u!1 &1456191988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1456191992}
-  - component: {fileID: 1456191991}
-  - component: {fileID: 1456191990}
-  - component: {fileID: 1456191993}
-  m_Layer: 0
-  m_Name: ModelTarget
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1456191990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456191988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: VuforiaScripts::DefaultObserverEventHandler
-  StatusFilter: 1
-  UsePoseSmoothing: 0
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 3.3333333
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 3.3333333
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1456191991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456191988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -75151077, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ModelTargetBehaviour
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: gandrang
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/gandrang.xml
-  mBaseSize: 0.2001953
-  mAspectRatioXY: 0.6505597
-  mAspectRatioXZ: 0.500244
-  mShowBoundingBox: 0
-  mOverrideSnappingPose: 0
-  mBBoxMin: {x: -0.100464, y: 0.055116, z: -0.0500977}
-  mBBoxMax: {x: 0.0997313, y: 0.185355, z: 0.0500488}
-  mPreviewImage: {fileID: 0}
-  mEnhanceRuntimeDetection: 0
-  m3DGuideViewModel: {fileID: 0}
-  m2DGuideViewImage: {fileID: 0}
-  mGuideViewDisplayMode: 0
-  m2DGuideViewMaterial: {fileID: 0}
-  m3DGuideViewMaterial: {fileID: 0}
-  mLength: 0.2001953
-  mWidth: 0.130239
-  mHeight: 0.1001465
-  m2DGuideViewMaterials: []
-  m3DGuideViewMaterials: []
-  mSelectedGuideView: 
-  mMotionHint: 1
-  mTrackingMode: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mHasRealisticTextures: 0
-  mPreview: {fileID: 1456191993}
-  mAutoValidationDataSetName: 
-  mGuideViewDisplayModeNeedsUpgrade: 0
---- !u!4 &1456191992
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456191988}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.188, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1376225129}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1456191993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456191988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1621554113, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ModelTargetPreview
-  mObserverBehaviour: {fileID: 1456191991}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: gandrang
-  mDatasetName: Vuforia/gandrang.xml
-  mCastedBehaviour: {fileID: 1456191991}
-  mModelTargetPreview: {fileID: 0}
 --- !u!1 &1478464901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,7 +4043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.998956, y: 349.99997}
+  m_AnchoredPosition: {x: 13.003, y: 338}
   m_SizeDelta: {x: 489.498, y: 85.318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579439548
@@ -4734,8 +4528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -149, y: -163.54004}
-  m_SizeDelta: {x: 130.74097, y: 130.73999}
+  m_AnchoredPosition: {x: -142, y: -163.54}
+  m_SizeDelta: {x: 156.331, y: 156.331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1937916119
 MonoBehaviour:
@@ -5390,4 +5184,3 @@ SceneRoots:
   - {fileID: 773190233}
   - {fileID: 1514605130}
   - {fileID: 330027547}
-  - {fileID: 1456191992}

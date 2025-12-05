@@ -26,11 +26,11 @@ public class ExperienceManager : MonoBehaviour
 
     void Update() 
     {
-        var ts = Touchscreen.current;
-        if (ts != null && ts.primaryTouch.press.wasPressedThisFrame)
+        // var ts = Touchscreen.current;
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
         {
             Debug.Log("Click detected");
-            AddExperience(5);
+            // AddExperience(5);
         }
     }
 
@@ -38,7 +38,7 @@ public class ExperienceManager : MonoBehaviour
     {
         totalExperience += amount;
         CheckForLevelUp();
-        UpdateInterface();
+        // UpdateInterface();
     }
 
     void CheckForLevelUp()
@@ -56,16 +56,30 @@ public class ExperienceManager : MonoBehaviour
     {
         previousLevelsExperience = (int)experienceCurve.Evaluate(currentLevel);
         nextLevelsExperience = (int)experienceCurve.Evaluate(currentLevel + 1);
-        UpdateInterface();
+        // UpdateInterface();
     }
 
     void UpdateInterface()
     {
+        // 🔍 Debug: Cek apakah objek aktif
+        if (levelText == null)
+        {
+            Debug.LogError("levelText is null!");
+            return;
+        }
+
+        if (!levelText.gameObject.activeInHierarchy)
+        {
+            Debug.LogWarning("levelText is disabled! GameObject is inactive.");
+            return;
+        }
+
         int start = totalExperience - previousLevelsExperience;
-        int end = nextLevelsExperience - previousLevelsExperience; 
+        int end = nextLevelsExperience - previousLevelsExperience;
+        float fill = end > 0 ? (float)start / (float)end : 0f;
 
         levelText.text = (currentLevel + 1).ToString();
         experienceText.text = start + " exp";
-        experienceFill.fillAmount = (float)start / (float)end;
+        experienceFill.fillAmount = fill;
     }
 }
