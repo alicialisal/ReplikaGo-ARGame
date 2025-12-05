@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.3.1">
+        <ModelTarget name="data1" targetId="954cab8136ec45c798e6a37eac8ad60e" bbox="-0.102665 0.0436855 0.120085 -0.0310553 0.252515 0.163681" version="14.0" toolVersion="v7.3.1" trackingMode="car" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+        <ModelTarget name="dataset2" targetId="34e0025590f14b729f7730d3d1ea03af" bbox="-0.100366 0.0552137 -0.05 0.0996336 0.185214 0.05" version="14.0" toolVersion="v7.3.1" trackingMode="car" upVector="1.0 0.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+        <ModelTarget name="database3" targetId="c21cc14c037443069b7ec1bdb093c25f" bbox="-0.368453 -0.208166 0.374679 -0.250329 0.417248 0.418937" version="14.0" toolVersion="v7.3.1" trackingMode="car" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="data1" assemblyId="a5cbfe20e2824a888048d2bc86d04b8d">
+        <Part name="data1" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+    <Assembly name="dataset2" assemblyId="c67f7420c5284cb39a5fe0193e0626e3">
+        <Part name="dataset2" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+    <Assembly name="database3" assemblyId="c2cc0ccae22f422c920e8205c5932707">
+        <Part name="database3" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+    <ModelTargetDatabase mtDBid="54dc573f60494142815e8b7ae401f950" name="cobapertamadvance" toolVersion="v7.3.1" version="36.0" />
+</QCARInfo>

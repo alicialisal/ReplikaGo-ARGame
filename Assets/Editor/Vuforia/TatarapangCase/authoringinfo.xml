@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.3.1">
+        <ModelTarget name="tatarapangcase" targetId="2004062eab86495f8cd016b58944cc83" version="14.0" toolVersion="v7.3.1" bbox="-0.0337656 0.00261752 -0.011071 0.0212344 0.157618 0.013929" trackingMode="car" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="tatarapangcase" assemblyId="4c35f13d1b54416cb3690d26f30981f4">
+        <Part name="tatarapangcase" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>
