@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/setelah tambah penghilang dantombol serta musik.unity
     guid: 502aecb95074e436b9fde8534f970929
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/tes setelah model target.unity
     guid: 322113a1b1cdd414d89fac2c20998a04
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/cobadalam1database.unity
     guid: 36ed335394b6c4d43a2f87a885305c1c
   m_configObjects:
