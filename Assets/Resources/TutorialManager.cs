@@ -8,9 +8,11 @@ public class TapToContinueTour : MonoBehaviour
     [Header("Tutorial Images (In Order)")]
     [SerializeField] Image[] tutorialImages;
 
+    // private QuizManager quizManager;
+
     [Header("Fade")]
     [SerializeField] float fadeDuration = 0.4f;
-    [SerializeField] GameObject missionUI; // Assign MissionUI GameObject
+    [SerializeField] GameObject quizUI; // Assign QuizUI GameObject
     private int currentIndex = 0;
     private bool isFading = false;
 
@@ -29,7 +31,7 @@ public class TapToContinueTour : MonoBehaviour
         }
         else
         {
-            missionUI.SetActive(true);
+            quizUI.SetActive(true);
         }
     }
 
@@ -60,8 +62,10 @@ public class TapToContinueTour : MonoBehaviour
             PlayerPrefs.Save();
 
             this.enabled = false;
-            // Aktifkan MissionUI
-            missionUI.SetActive(true);
+            // Aktifkan QuizUI
+            quizUI.SetActive(true);
+
+            quizUI.GetComponent<QuizManager>().StartQuizForModel(0);
         }
         
         Debug.Log(PlayerPrefs.GetInt("tourDone", 0));
