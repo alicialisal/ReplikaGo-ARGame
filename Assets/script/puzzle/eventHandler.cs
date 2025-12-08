@@ -3,14 +3,14 @@ using Vuforia;
 
 public class CustomObserverEventHandler : DefaultObserverEventHandler
 {
-    public PuzzleSpawner puzzleSpawner;
+    public PuzzleManager puzzleManager;
 
     protected override void OnTrackingFound()
     {
         Debug.Log("Custom OnTrackingFound called");
         base.OnTrackingFound();
-        if (puzzleSpawner != null)
-            puzzleSpawner.SpawnPuzzle();
+        if (puzzleManager != null)
+            puzzleManager.ActivatePuzzle();
     }
 
     protected override void OnTrackingLost()

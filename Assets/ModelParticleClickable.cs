@@ -115,6 +115,27 @@ public class ModelPartClickableSimple : MonoBehaviour
             LogDebug(">>> CLICK at: " + Input.mousePosition);
             CheckRaycastHit(Input.mousePosition);
         }
+
+        // Debug ekstrem: cek apakah collider & rigidbody ada
+        Collider col = GetComponent<Collider>();
+        if (col == null)
+        {
+            Debug.LogError("❌ NO COLLIDER on " + name);
+        }
+        else
+        {
+            Debug.Log("✅ Collider found: " + col.GetType().Name + " | isTrigger: " + col.isTrigger);
+        }
+    
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            Debug.LogError("❌ NO RIGIDBODY on " + name);
+        }
+        else
+        {
+            Debug.Log("✅ Rigidbody found: IsKinematic=" + rb.isKinematic + ", UseGravity=" + rb.useGravity);
+        }
     }
 
     #region Setup Methods
