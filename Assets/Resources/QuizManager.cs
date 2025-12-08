@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class QuizManager : MonoBehaviour
 {
+    [SerializeField] private ExperienceManager experienceManager;
     // --- UI References (TMP) ---
     public Image bgImage;
     public TMP_Text judulText;         // "Kuis!" title
@@ -149,8 +150,9 @@ public class QuizManager : MonoBehaviour
 
         if (selectedOption == q.correctAnswerIndex)
         {
-            Debug.Log("✅ Benar!");
             Invoke(nameof(LoadNextQuestion), 1.5f);
+            experienceManager.AddExperience(100); // Tambahkan EXP di sini
+            Debug.Log("✅ Benar! EXP 100 diberikan.");
         }
         else
         {

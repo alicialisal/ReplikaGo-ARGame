@@ -12,7 +12,7 @@ public class TapToContinueTour : MonoBehaviour
 
     [Header("Fade")]
     [SerializeField] float fadeDuration = 0.4f;
-    [SerializeField] GameObject quizUI; // Assign QuizUI GameObject
+    // [SerializeField] GameObject quizUI; // Assign QuizUI GameObject
     private int currentIndex = 0;
     private bool isFading = false;
 
@@ -31,7 +31,7 @@ public class TapToContinueTour : MonoBehaviour
         }
         else
         {
-            quizUI.SetActive(true);
+            // quizUI.SetActive(true);
         }
     }
 
@@ -63,9 +63,9 @@ public class TapToContinueTour : MonoBehaviour
 
             this.enabled = false;
             // Aktifkan QuizUI
-            quizUI.SetActive(true);
+            // quizUI.SetActive(true);
 
-            quizUI.GetComponent<QuizManager>().StartQuizForModel(0);
+            // quizUI.GetComponent<QuizManager>().StartQuizForModel(0);
         }
         
         Debug.Log(PlayerPrefs.GetInt("tourDone", 0));

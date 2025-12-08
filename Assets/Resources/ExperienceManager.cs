@@ -26,12 +26,12 @@ public class ExperienceManager : MonoBehaviour
 
     void Update() 
     {
-        var ts = Touchscreen.current;
-        if (ts != null && ts.primaryTouch.press.wasPressedThisFrame)
-        {
-            Debug.Log("Click detected");
-            AddExperience(5);
-        }
+        // var ts = Touchscreen.current;
+        // if (ts != null && ts.primaryTouch.press.wasPressedThisFrame)
+        // {
+        //     Debug.Log("Click detected");
+        //     AddExperience(5);
+        // }
     }
 
     public void AddExperience(int amount)

@@ -5,6 +5,7 @@ public class PuzzleChecker : MonoBehaviour
     public static PuzzleChecker Instance;
 
     [Header("Puzzle Setup")]
+    [SerializeField] private PuzzleUIManager uiManager; // Tarik di Inspector
     [SerializeField] private PuzzlePieceSelector[] puzzlePieces;
     [SerializeField] private ExperienceManager experienceManager;
     [SerializeField] private float toleranceDegrees = 30f; // ±10°
@@ -50,7 +51,11 @@ public class PuzzleChecker : MonoBehaviour
             int puzzleExp = 200; // Sesuaikan
             experienceManager.AddExperience(puzzleExp);
             Debug.Log($"Puzzle solved! +{puzzleExp} EXP");
-        }
+
+            // Beri tahu UI Manager
+            if (uiManager != null)
+                uiManager.OnPuzzleSolved();
+            }
         else
         {
             Debug.Log("Puzzle not solved yet.");
