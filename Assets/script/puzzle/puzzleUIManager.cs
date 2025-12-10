@@ -59,6 +59,21 @@ public class PuzzleUIManager : MonoBehaviour
         if (rotateUI != null) rotateUI.SetActive(false);
         // if (puzzlePiecesContainer != null) puzzlePiecesContainer.SetActive(false);
         puzzleManager.DeactivatePuzzle();
-        
+    }
+
+    // Tambahkan di akhir class PuzzleUIManager
+
+    public bool IsModelSolved(int modelIndex)
+    {
+        Debug.Log($"Cek status solved untuk model index: {modelIndex} - " + PlayerPrefs.GetInt($"ModelSolved_{modelIndex}", 0));
+        return PlayerPrefs.GetInt($"ModelSolved_{modelIndex}", 0) == 1;
+    }
+    
+    public void MarkModelAsSolved(int modelIndex)
+    {
+        PlayerPrefs.SetInt($"ModelSolved_{modelIndex}", 1);
+        PlayerPrefs.Save();
+
+        Debug.Log($"Model index {modelIndex} ditandai sebagai solved.");
     }
 }

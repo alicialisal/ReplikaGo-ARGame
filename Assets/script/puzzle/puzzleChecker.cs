@@ -41,6 +41,8 @@ public class PuzzleChecker : MonoBehaviour
         }
 
         Debug.Log("[PuzzleChecker] 🎉 All pieces aligned!");
+        PlayerPrefs.SetInt("puzzleCaseSolved", 1);
+        PlayerPrefs.Save();
         return true;
     }
 

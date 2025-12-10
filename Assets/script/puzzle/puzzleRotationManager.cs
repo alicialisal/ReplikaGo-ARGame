@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class PuzzleRotationManager : MonoBehaviour
 {
     [Header("Rotation Settings")]
-    [SerializeField] private float rotationStep = 90f;
+    [SerializeField] private float rotationStep = 30f;
 
     [SerializeField] private List<PuzzlePieceSelector> puzzlePieces = new List<PuzzlePieceSelector>();
     private int currentIndex = -1;

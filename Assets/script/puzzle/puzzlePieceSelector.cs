@@ -2,14 +2,25 @@ using UnityEngine;
 
 public class PuzzlePieceSelector : MonoBehaviour
 {
+    public enum RotationAxis
+    {
+        X,
+        Y,
+        Z
+    }
     public static PuzzlePieceSelector currentSelected;
 
     [Header("Visual Feedback")]
+    
     [SerializeField] private Color selectedColor = Color.yellow;
+
+    [Header("Rotation Settings")]
+    [SerializeField] private RotationAxis rotationAxis; // Bisa diubah di Inspector
 
     private Renderer renderer;
     private Material originalMaterial;
     private Material selectedMaterial;
+
 
     void Start()
     {
@@ -37,14 +48,53 @@ public class PuzzlePieceSelector : MonoBehaviour
         renderer.material = originalMaterial;
     }
 
+    // 🔁 Rotasi berdasarkan sumbu yang dipilih di Inspector
     public void RotatePiece(float degrees)
     {
+        switch (rotationAxis)
+        {
+            case RotationAxis.X:
+                transform.Rotate(Vector3.right, degrees, Space.Self);
+                break;
+            case RotationAxis.Y:
+                transform.Rotate(Vector3.up, degrees, Space.World);
+                break;
+            case RotationAxis.Z:
+                transform.Rotate(Vector3.forward, degrees, Space.Self);
+                break;
+        }
+    }
+
+    public void RotatePieceY(float degrees)
+    {
         transform.Rotate(Vector3.up, degrees, Space.World);
+    }
+
+    // Putar di sumbu Z (seperti memutar di layar 2D)
+    public void RotatePieceZ(float degrees)
+    {
+        transform.Rotate(Vector3.forward, degrees, Space.Self);
+    }   
+
+    // Putar di sumbu X (miring ke depan/belakang)
+    public void RotatePieceX(float degrees)
+    {
+        transform.Rotate(Vector3.right, degrees, Space.Self);
     }
 
     // Tambahkan di dalam class PuzzlePieceSelector
     public float GetCurrentYRotation()
     {
         return transform.eulerAngles.y;
+    }
+
+    public float GetCurrentZRotation()
+    {
+        return transform.eulerAngles.z;
+    }
+
+    public float GetCurrentXRotation()
+    {
+        return transform.eulerAngles.x;
     }
 }

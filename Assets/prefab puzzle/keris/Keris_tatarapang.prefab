@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5866371533815853640}
   - component: {fileID: 7405697078120267245}
   - component: {fileID: 4693495217826908455}
+  - component: {fileID: 3657157071239417723}
+  - component: {fileID: 2720315235344364774}
+  - component: {fileID: 1953386727355442606}
   m_Layer: 0
   m_Name: Keris_tatarapang
   m_TagString: Untagged
@@ -26,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6494851987694086386}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.016742796, y: -0.7084267, z: 0.70558417, w: 0.0015032777}
-  m_LocalPosition: {x: -0.9319, y: -0.0136, z: -0.11899999}
-  m_LocalScale: {x: 0.27638507, y: 0.408491, z: 0.3187047}
+  m_LocalRotation: {x: -0.110087186, y: -0.7000212, z: 0.6996113, w: -0.09162556}
+  m_LocalPosition: {x: -540.932, y: -961.0136, z: -0.11899999}
+  m_LocalScale: {x: 0.276385, y: 0.408491, z: 0.3187047}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 88.504, y: 260.528, z: 81.763}
+  m_LocalEulerAnglesHint: {x: 88.504, y: 260.527, z: 96.929}
 --- !u!33 &7405697078120267245
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -89,3 +92,64 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3657157071239417723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494851987694086386}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.28669065, y: 0.057481926, z: 0.3096149}
+  m_Center: {x: 0.04208349, y: -0.00000078455867, z: -0.13168854}
+--- !u!54 &2720315235344364774
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494851987694086386}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1953386727355442606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494851987694086386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729afed227874364baa32f58e218f37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzlePieceSelector
+  selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

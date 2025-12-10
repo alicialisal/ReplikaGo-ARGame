@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 25b8fdb205398f3488dd3d0935bdaec0
+guid: 898b92cdce8b1074281bf030504ca57a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gendang
+    second: {fileID: 2100000, guid: 9d3d633313ea9464aa45693f05aad20c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: a8bf5b562abd458db9b566d302e8b3e7_RGB_Gendang_Albedo
+    second: {fileID: 2800000, guid: 5661d976433e5ce4bba86259462a1ee5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: c807b3d6e7e648a9a1fafcd585994536_N_Gendang_Normal
+    second: {fileID: 2800000, guid: 30534d1b1c634194ca6751b6606214e4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

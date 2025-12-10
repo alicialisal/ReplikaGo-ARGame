@@ -55,6 +55,8 @@ public class QuizManager : MonoBehaviour
     private int currentQuestionIndex = 0;
     private bool isQuizActive = false;
     private int selectedOption = -1;
+    private CustomObserverEventHandler observerEventHandler;
+    [SerializeField] private PuzzleUIManager puzzleUIManager;
 
     public delegate void OnQuizCompleted(string modelName);
     public static event OnQuizCompleted QuizCompleted;
@@ -171,6 +173,11 @@ public class QuizManager : MonoBehaviour
     {
         isQuizActive = false;
         HideQuizUI();
+        // 🔥 Tandai model sebagai solved
+        if (currentModelIndex >= 0)
+        {
+            puzzleUIManager?.MarkModelAsSolved(currentModelIndex);
+        }
         QuizCompleted?.Invoke(modelName);
         Debug.Log($"Quiz selesai untuk: {modelName}");
     }
