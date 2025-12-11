@@ -1428,6 +1428,117 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &573361800
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 773190233}
+    m_Modifications:
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1146
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1563
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.13583
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -53.499756
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 650278630487700314, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899271793204070402, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+      propertyPath: m_Name
+      value: Koleksi
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+--- !u!224 &573361801 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 505610294244315816, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+  m_PrefabInstance: {fileID: 573361800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &573361802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3899271793204070402, guid: 8d0b38d96a8f47342acd10030c1b40db, type: 3}
+  m_PrefabInstance: {fileID: 573361800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &595125066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2157,6 +2268,7 @@ RectTransform:
   - {fileID: 93649626}
   - {fileID: 1310133662}
   - {fileID: 6462623990022714921}
+  - {fileID: 573361801}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3603,6 +3715,8 @@ GameObject:
   - component: {fileID: 1354335023}
   - component: {fileID: 1354335025}
   - component: {fileID: 1354335024}
+  - component: {fileID: 1354335027}
+  - component: {fileID: 1354335026}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -3668,6 +3782,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354335022}
   m_CullTransparentMesh: 1
+--- !u!114 &1354335026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354335022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f0761a5b647d44b958f3784c151571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KoleksiToggle
+  koleksiPanel: {fileID: 573361802}
+--- !u!114 &1354335027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354335022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1354335024}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1354335026}
+        m_TargetAssemblyTypeName: KoleksiToggle, Assembly-CSharp
+        m_MethodName: ShowKoleksi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1370551969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,7 +6363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be6686a2867840459b851009e88cc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioToggleButton
-  audioButton: {fileID: 0}
+  audioButton: {fileID: 1885486196}
   slashImage: {fileID: 1370551971}
   fadeDuration: 0.25
   audioSource: {fileID: 0}
