@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6065424780787451421}
   - component: {fileID: 4204631750874869443}
   - component: {fileID: 5856257326069595889}
-  - component: {fileID: 6149413721957988589}
   - component: {fileID: 565185408324339871}
   m_Layer: 0
   m_Name: Tatarapang_terpotong3
@@ -129,27 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzlePieceSelector
   selectedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
---- !u!65 &6149413721957988589
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5705018131146057672}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2725368, y: 0.20658374, z: 0.13921773}
-  m_Center: {x: 0.006646603, y: 0.0014517191, z: 0.011773032}
+  rotationAxis: 0
 --- !u!54 &565185408324339871
 Rigidbody:
   m_ObjectHideFlags: 0

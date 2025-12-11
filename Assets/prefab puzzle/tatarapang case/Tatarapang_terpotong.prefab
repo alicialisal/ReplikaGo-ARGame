@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4096770667775526695}
   - component: {fileID: 1113933519095007362}
   - component: {fileID: 2923271478182935624}
-  - component: {fileID: 3536246784288177380}
   - component: {fileID: 4316528831812386491}
   m_Layer: 0
   m_Name: Tatarapang_terpotong
@@ -92,27 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3536246784288177380
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3715882678947437981}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2932852, y: 0.37118486, z: 0.19007315}
-  m_Center: {x: 0.14665462, y: 0.114167176, z: -0.054819718}
 --- !u!54 &4316528831812386491
 Rigidbody:
   m_ObjectHideFlags: 0
