@@ -4,10 +4,9 @@ public class PuzzleManager : MonoBehaviour
 {
     [Tooltip("Daftar potongan puzzle yang sudah ditempatkan di scene (dalam keadaan disabled)")]
     [SerializeField] private GameObject[] puzzlePieces;
+    [Header("Base Rotations (Harus sejajar dengan puzzlePieces)")]
+    [SerializeField] private Vector3[] baseRotations; // Rotasi dasar per potongan
 
-    /// <summary>
-    /// Aktifkan semua potongan puzzle dan beri rotasi acak di sumbu Z.
-    /// </summary>
     public void ActivatePuzzle()
     {
         if (puzzlePieces == null || puzzlePieces.Length == 0)
@@ -16,24 +15,29 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
 
-        foreach (GameObject piece in puzzlePieces)
+        // Pastikan array sejajar
+        if (baseRotations.Length != puzzlePieces.Length)
         {
+            Debug.LogError($"[PuzzleManager] Jumlah baseRotations ({baseRotations.Length}) tidak sama dengan puzzlePieces ({puzzlePieces.Length})!");
+            return;
+        }
+
+        for (int i = 0; i < puzzlePieces.Length; i++)
+        {
+            GameObject piece = puzzlePieces[i];
             if (piece == null) continue;
 
-            // Beri rotasi acak hanya di sumbu Z (dalam ruang lokal)
-            Vector3 currentEuler = piece.transform.localEulerAngles;
-            piece.transform.localEulerAngles = new Vector3(
-                currentEuler.x,
-                Random.Range(0f, 360f),
-                currentEuler.z
-            );
+            // 🔥 Set rotasi dasar dari array
+            piece.transform.localRotation = Quaternion.Euler(baseRotations[i]);
 
-            // Aktifkan objek
+            // Tambahkan rotasi acak hanya di sumbu Y
+            float randomY = Random.Range(0f, 360f);
+            piece.transform.Rotate(Vector3.up, randomY, Space.Self);
+
             piece.SetActive(true);
         }
-        
-        // PuzzleChecker.Instance.OnPuzzleSpawned();
-        Debug.Log("[PuzzleManager] Puzzle diaktifkan dengan rotasi acak.");
+
+        Debug.Log("[PuzzleManager] Puzzle diaktifkan dengan rotasi acak (hanya sumbu Y).");
     }
 
     /// <summary>

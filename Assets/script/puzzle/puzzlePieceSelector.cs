@@ -16,6 +16,7 @@ public class PuzzlePieceSelector : MonoBehaviour
 
     [Header("Rotation Settings")]
     [SerializeField] private RotationAxis rotationAxis; // Bisa diubah di Inspector
+    [SerializeField] private bool useGlobalY = true; // Gunakan sumbu Y global atau lokal
 
     private Renderer renderer;
     private Material originalMaterial;
@@ -51,23 +52,27 @@ public class PuzzlePieceSelector : MonoBehaviour
     // 🔁 Rotasi berdasarkan sumbu yang dipilih di Inspector
     public void RotatePiece(float degrees)
     {
-        switch (rotationAxis)
-        {
-            case RotationAxis.X:
-                transform.Rotate(Vector3.right, degrees, Space.Self);
-                break;
-            case RotationAxis.Y:
-                transform.Rotate(Vector3.up, degrees, Space.World);
-                break;
-            case RotationAxis.Z:
-                transform.Rotate(Vector3.forward, degrees, Space.Self);
-                break;
-        }
-    }
-
-    public void RotatePieceY(float degrees)
-    {
-        transform.Rotate(Vector3.up, degrees, Space.World);
+        // if (useGlobalY && rotationAxis == RotationAxis.Y)
+        // {
+        //     // Putar di sumbu global Y (vertikal dunia)
+        //     transform.Rotate(Vector3.up, degrees, Space.World);
+        // }
+        // else
+        // {
+        //     // Gunakan rotasi lokal untuk sumbu lain
+            switch (rotationAxis)
+            {
+                case RotationAxis.X:
+                    transform.Rotate(Vector3.right, degrees, Space.Self);
+                    break;
+                case RotationAxis.Z:
+                    transform.Rotate(Vector3.forward, degrees, Space.Self);
+                    break;
+                case RotationAxis.Y:
+                    transform.Rotate(Vector3.up, degrees, Space.Self);
+                    break;
+            }
+        // }
     }
 
     // Putar di sumbu Z (seperti memutar di layar 2D)

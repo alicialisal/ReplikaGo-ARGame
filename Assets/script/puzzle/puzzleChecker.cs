@@ -9,6 +9,7 @@ public class PuzzleChecker : MonoBehaviour
     [SerializeField] private PuzzlePieceSelector[] puzzlePieces;
     [SerializeField] private ExperienceManager experienceManager;
     [SerializeField] private float toleranceDegrees = 30f; // ±10°
+    [SerializeField] private FeedbackManager feedbackManager;
 
     void Awake()
     {
@@ -60,6 +61,7 @@ public class PuzzleChecker : MonoBehaviour
             }
         else
         {
+            feedbackManager.ShowTryAgain();
             Debug.Log("Puzzle not solved yet.");
         }
     }
