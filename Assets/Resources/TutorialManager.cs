@@ -15,6 +15,7 @@ public class TapToContinueTour : MonoBehaviour
     // [SerializeField] GameObject quizUI; // Assign QuizUI GameObject
     private int currentIndex = 0;
     private bool isFading = false;
+    public PuzzleUIManager puzzleUIManager;
 
     void Start()
     {
@@ -33,6 +34,21 @@ public class TapToContinueTour : MonoBehaviour
         {
             // quizUI.SetActive(true);
         }
+
+        // Cari PuzzleUIManager di seluruh scene
+        var managers = FindObjectsOfType<PuzzleUIManager>();
+        foreach (var mgr in managers)
+        {
+            Debug.Log($"Found: {mgr.gameObject.name}");
+            // if (mgr.gameObject.name == "PuzzleManager Keris")
+            // {
+            //     puzzleUIManager = mgr;
+            //     break;
+            // }
+        }
+    
+        if (puzzleUIManager == null)
+            Debug.LogError("Still NULL after Find!");
     }
 
     void Update()

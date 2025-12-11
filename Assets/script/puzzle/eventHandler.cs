@@ -3,41 +3,56 @@ using Vuforia;
 
 public class CustomObserverEventHandler : DefaultObserverEventHandler
 {
-    [SerializeField] private PuzzleUIManager puzzleUIManager;
+    // [SerializeField] private PuzzleUIManager puzzleUIManager;
     // [SerializeField] private ModelTarget modelTarget;
     // [SerializeField] private List<GameObject> modeldesc;
 
 
     protected override void OnTrackingFound()
     {
+        foreach (Transform child in transform)
+        {
+            if (child.name.Contains("PuzzleManager"))
+            {
+                child.gameObject.SetActive(true);
+                Debug.Log($"[ACTIVATE] Mengaktifkan: {child.name}");
+            }
+        }
+
         Debug.Log("Custom OnTrackingFound called");
         base.OnTrackingFound();
-    
-        if (puzzleUIManager != null)
+
+        // 🔥 CARI PuzzleUIManager DI CHILD
+        PuzzleUIManager localPuzzleUIManager = GetComponentInChildren<PuzzleUIManager>();
+
+        if (localPuzzleUIManager == null)
         {
-            string targetName = GetComponent<ObserverBehaviour>().TargetName;
-            int modelIndex = GetModelIndexByName(targetName);
-            HideAllModelDescExcludingPuzzle();
-            if (modelIndex >= 0)
+            Debug.LogError($"[ERROR] Tidak menemukan PuzzleUIManager di child {name}!");
+            return;
+        }
+
+        string targetName = GetComponent<ObserverBehaviour>().TargetName;
+        int modelIndex = GetModelIndexByName(targetName);
+        Debug.Log($"Target: {targetName} | Index: {modelIndex}");
+
+        HideAllModelDescExcludingPuzzle();
+
+        if (modelIndex >= 0)
+        {
+            if (localPuzzleUIManager.IsModelSolved(modelIndex))
             {
-                // 🔥 Cek apakah model ini sudah solved
-                if (puzzleUIManager.IsModelSolved(modelIndex))
-                {
-                    // Langsung tampilkan deskripsi (non-puzzle)
-                    ShowAllModelDescExcludingPuzzle();
-                    Debug.Log("[Vuforia] Model sudah solved. Menampilkan deskripsi langsung.");
-                }
-                else
-                {
-                    // Tampilkan puzzle seperti biasa
-                    puzzleUIManager.OnItemFound(modelIndex);
-                    Debug.Log($"[Vuforia] Model '{targetName}' terdeteksi. Index: {modelIndex}");
-                }
+                ShowAllModelDescExcludingPuzzle();
+                Debug.Log("[Vuforia] Model sudah solved. Menampilkan deskripsi langsung.");
             }
             else
             {
-                Debug.LogError($"[Vuforia] Model '{targetName}' tidak dikenali!");
+                localPuzzleUIManager.OnItemFound(modelIndex);
+                Debug.Log($"[Vuforia] Model '{targetName}' terdeteksi.");
             }
+        }
+        else
+        {
+            Debug.LogError($"[Vuforia] Model '{targetName}' tidak dikenali!");
         }
     }
 
