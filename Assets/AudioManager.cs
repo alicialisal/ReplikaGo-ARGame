@@ -3,18 +3,12 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
+
+    public bool IsMuted = false;
+
     [Header("Background Music")]
-    [SerializeField] AudioSource backgroundMusicSource;
-
-    [Header("Music Clips")]
-    [SerializeField] AudioClip startmusic;
-
-    private void Start()
-    {
-        Debug.Log("Starting background music.");
-        backgroundMusicSource.clip = startmusic;
-        backgroundMusicSource.Play();
-    }
+    [SerializeField] private AudioSource backgroundMusicSource; // Assign di inspector
+    [SerializeField] private AudioClip backgroundMusicClip;     // Assign clip di inspector
 
     private void Awake()
     {
@@ -22,6 +16,14 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            if (backgroundMusicSource != null && backgroundMusicClip != null)
+            {
+                backgroundMusicSource.clip = backgroundMusicClip;
+                backgroundMusicSource.loop = false; // biar terus main
+                backgroundMusicSource.Play();
+                backgroundMusicSource.mute = IsMuted;
+            }
         }
         else
         {
@@ -31,12 +33,21 @@ public class AudioManager : MonoBehaviour
 
     public bool ToggleMute()
     {
-        backgroundMusicSource.mute = !backgroundMusicSource.mute;
-        return backgroundMusicSource.mute;
+        IsMuted = !IsMuted;
+        SetMute(IsMuted);
+        return IsMuted;
     }
 
     public void SetMute(bool mute)
     {
-        backgroundMusicSource.mute = mute;
+        IsMuted = mute;
+
+        if (backgroundMusicSource != null)
+            backgroundMusicSource.mute = mute;
+
+        OnMuteChanged?.Invoke(mute);
     }
+
+    public delegate void MuteChanged(bool isMuted);
+    public event MuteChanged OnMuteChanged;
 }
