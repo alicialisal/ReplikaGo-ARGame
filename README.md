@@ -52,8 +52,6 @@
 
 <p align="center">
   <img src="kiri.jpg" width="250">
-  <img src="tengah1.jpg" width="250">
-  <img src="kaanaan.jpg" width="250">
 </p>
 
 This project is an educational museum game developed for the Balla Lompoa Museum to provide an interactive and immersive learning experience for visitors through gameplay and Augmented Reality (AR) technology.
@@ -91,7 +89,7 @@ This project uses several Unity packages and supporting libraries:
 - XR Interaction Toolkit
 - Blender 3D Assets
 
-## ublication
+## Publication
 
 This project was documented as part of a research and conference publication discussing the implementation of Augmented Reality (AR) technology and gamification for interactive museum education at Balla Lompoa Museum.
 
@@ -133,10 +131,6 @@ The application allows users to interact with museum artifacts through AR visual
 Journal Publication:
 
 [Research Publication](https://www.researchgate.net/publication/400532855_ReplikaGO_Digitizing_the_Artifacts_of_the_Balla_Lompoa_Museum_through_Augmented_Reality_and_Gamification)
-
-DOI:
-
-[DOI](10.51747/intro.v4i2.427)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
