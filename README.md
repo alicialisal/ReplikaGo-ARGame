@@ -8,9 +8,6 @@
 
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
 
-## Application Mockup
-
-
 <!-- PROJECT LOGO --> 
 <p align="center">
   <img src="logo.png" width="250" style="border-radius: 20px;">
@@ -53,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 This project is an educational museum game developed for the Balla Lompoa Museum to provide an interactive and immersive learning experience for visitors through gameplay and Augmented Reality (AR) technology.
 
