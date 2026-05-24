@@ -98,24 +98,26 @@ This project uses several Unity packages and supporting libraries:
 
 ## Getting Started
 
-Follow these steps to set up the laravel project locally
+Follow these steps to set up the unity project locally
 
 ### Prerequisites
 
 Make sure you have installed the following software:
 
-- PHP 8.2+
-- Composer
+- Unity Hub
+- Unity Editor 6 (6000.2.2f1)
+- Android Build Support
+- Visual Studio
 - Git
-- MySQL 
+- Blender (optional for 3D asset editing)
 
 Check your installation:
 
 ```sh
-php --version
-composer --version
 git --version
 ```
+
+You can verify the Unity version directly from Unity Hub.
 
 ---
 
@@ -133,60 +135,56 @@ git clone https://github.com/your_username/your_repository.git
 cd your_repository
 ```
 
-3. Install project dependencies
+3. Open the project using Unity Hub
 
-```sh
-composer install
-```
+- Open Unity Hub
+- Click **Add Project**
+- Select the cloned project folder
 
-4. Copy the environment configuration file
+4. Install required Unity packages
 
-```sh
-cp .env.example .env
-```
-
-**Windows (PowerShell)**
-
-```powershell
-copy .env.example .env
-```
-
-5. Generate the Laravel application key
-
-```sh
-php artisan key:generate
-```
-
-6. Configure your database in the `.env` file
-
-Example:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-7. Run database migrations
-
-```sh
-php artisan migrate
-```
-
-8. Start the Laravel development server
-
-```sh
-php artisan serve
-```
-
-The backend server will run at:
+Open:
 
 ```txt
-http://127.0.0.1:8000
+Window → Package Manager
 ```
+
+Make sure these packages are installed:
+
+- Vuforia Engine
+- TextMeshPro
+- XR Interaction Toolkit
+- Input System
+
+5. Configure Android Build Support
+
+Open:
+
+```txt
+File → Build Settings
+```
+
+Then select:
+
+```txt
+Android → Switch Platform
+```
+
+6. Run the project
+
+Press the **Play** button inside the Unity Editor.
+
+---
+
+### Build APK
+
+To generate an Android APK:
+
+```txt
+File → Build Settings → Build
+```
+
+The generated APK can then be installed on Android devices for AR gameplay experience.
 
 ---
 
@@ -226,17 +224,19 @@ System workflow:
 
 Franklin Jaya - [@franklinjaya_](https://www.instagram.com/franklinjaya_/) - franklinjaya827@gmail.com
 
-Project Link: [https://github.com/chaidenfoanto/Jobaile_BACKEND)
+Project Link: 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Development Team
 
-Proyek ini dikembangkan oleh tim **Jobaile Development Team**, yang terdiri dari:
+Proyek ini dikembangkan oleh tim **Replika-Go Team**, yang terdiri dari:
 
-1. **Chaiden Richardo Foanto**  
-2. **Franklin Jaya** 
-3. **Felicia Wijaya** 
+1. **Alicia Lisal**
+2. **Chaiden Richardo Foanto**
+3. **Derick Norlan**
+4. **Franklin Jaya** 
+5. **Michael Christianto Sawitto** 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
