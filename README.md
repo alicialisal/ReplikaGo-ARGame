@@ -87,28 +87,12 @@ This game project was developed using the following technologies:
 
 This project uses several Unity packages and supporting libraries:
 
-- Unity Engine
+- Unity 6 (6000.2.2f1)
 - Vuforia Engine
 - TextMeshPro
 - Unity Input System
 - XR Interaction Toolkit
 - Blender 3D Assets
-
-Example packages used in the project:
-
-```json
-{
-  "dependencies": {
-    Unity 6 (6000.2.2f1)
-    "com.unity.textmeshpro": "3.0.6",
-    "com.unity.cinemachine": "2.9.7",
-    "com.unity.inputsystem": "1.7.0",
-    "com.unity.xr.interaction.toolkit": "2.5.2"
-  }
-}
-```
-
----
 
 ## Getting Started
 
@@ -204,17 +188,34 @@ http://127.0.0.1:8000
 
 ---
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-This project consists of two separate repositories:
+This project is a mobile-based educational museum game developed for Balla Lompoa Museum using gameplay and Augmented Reality (AR) technology.
 
-- Frontend (Flutter)
-- Backend (Laravel API)
+The game combines interactive learning, puzzle-solving, artifact hunting, and AR experiences to create an immersive educational environment for museum visitors.
 
-Repository Links:
-- Frontend: https://github.com/chaidenfoanto/Jobaile_FRONTEND_Recruiter
-- Backend: https://github.com/chaidenfoanto/Jobaile_BACKEND
+Main gameplay features include:
+
+- Historical puzzle-solving gameplay
+- Museum artifact hunting missions
+- Interactive AR experiences using Vuforia Engine
+- Easter egg discovery system
+- Educational exploration inside the museum
+- Marker and model target-based AR interaction
+- Mobile-based gameplay experience
+- 3D object visualization created using Blender
+
+The system uses Vuforia Engine model target generation technology to recognize museum objects and trigger AR-based educational content during gameplay.
+
+System workflow:
+
+1. Players explore the museum environment using a mobile device
+2. The game provides missions and puzzle objectives
+3. Players search for hidden historical artifacts
+4. Vuforia scans markers or model targets inside the museum
+5. AR content and 3D objects appear when targets are recognized
+6. Players complete challenges and unlock hidden easter eggs
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
