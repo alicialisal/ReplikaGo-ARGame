@@ -12,7 +12,7 @@
 
 <!-- PROJECT LOGO --> 
 <p align="center">
-  <img src="logo.png" width="400" style="border-radius: 20px;">
+  <img src="logo.png" width="250" style="border-radius: 20px;">
 </p>
 <br />
 
