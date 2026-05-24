@@ -72,8 +72,6 @@ Main features include:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
 This game project was developed using the following technologies:
@@ -92,6 +90,55 @@ This project uses several Unity packages and supporting libraries:
 - Unity Input System
 - XR Interaction Toolkit
 - Blender 3D Assets
+
+## ublication
+
+This project was documented as part of a research and conference publication discussing the implementation of Augmented Reality (AR) technology and gamification for interactive museum education at Balla Lompoa Museum.
+
+<p align="center">
+  <img src="conference.jpg" width="300">
+</p>
+
+### Research Title
+
+**ReplikaGO: Digitizing the Artifacts of the Balla Lompoa Museum through Augmented Reality and Gamification**
+
+### Research Overview
+
+The research focuses on developing a mobile-based educational game using Augmented Reality (AR) technology to improve visitor engagement and historical learning experiences inside the museum environment.
+
+The system integrates:
+
+- Unity Game Engine
+- Vuforia Engine
+- Marker-Based and Model Target AR
+- 3D Object Visualization
+- Educational Puzzle System
+- Gamification Mechanics
+
+The application allows users to interact with museum artifacts through AR visualization, complete historical puzzles, search for hidden objects, and discover easter eggs inside the museum environment.
+
+### Research Contributions
+
+- Development of an educational AR museum game
+- Interactive historical learning through gamification
+- Integration of Vuforia model target technology
+- Mobile-based immersive museum exploration
+- 3D cultural artifact visualization
+- Puzzle and object-hunting educational mechanics
+- Preservation and digitalization of local cultural heritage
+
+### Publication Link
+
+Journal Publication:
+
+[Research Publication](https://www.researchgate.net/publication/400532855_ReplikaGO_Digitizing_the_Artifacts_of_the_Balla_Lompoa_Museum_through_Augmented_Reality_and_Gamification)
+
+DOI:
+
+[DOI](10.51747/intro.v4i2.427)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
