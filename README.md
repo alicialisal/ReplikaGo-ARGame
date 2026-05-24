@@ -262,6 +262,7 @@ System workflow:
 
 - Franklin Jaya - [@franklinjaya_](https://www.instagram.com/franklinjaya_/) - franklinjaya827@gmail.com - [Franklin-Github](https://github.com/FranklinJaya2006) <br>
 - Chaiden Richardo Foanto - [@chaidenfoanto](https://www.instagram.com/chaidenfoanto/) - chaiden.foanto@gmail.com - [Chaiden-Github](https://github.com/chaidenfoanto) <br>
+- Alicia Juanita Lisal - [@alicia_lisal](https://www.instagram.com/alicia_lisal/) - alicia.lisal94@gmail.com - [Chaiden-Github](https://github.com/alicialisal) <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
