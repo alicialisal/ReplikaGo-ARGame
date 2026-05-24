@@ -220,6 +220,7 @@ System workflow:
 ## Contact
 
 Franklin Jaya - [@franklinjaya_](https://www.instagram.com/franklinjaya_/) - franklinjaya827@gmail.com - [Franklin-Github](https://github.com/FranklinJaya2006)
+Chaiden Richardo Foanto - [@chaidenfoanto](https://www.instagram.com/chaidenfoanto/) - chaiden.foanto@gmail.com - [Chaiden-Github](https://github.com/chaidenfoanto)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
