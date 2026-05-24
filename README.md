@@ -76,10 +76,10 @@ Main features include:
 
 This game project was developed using the following technologies:
 
-* [![Unity][Unity.com]][Unity-url]
-* [![CSharp][CSharp.com]][CSharp-url]
-* [![Vuforia][Vuforia.com]][Vuforia-url]
-* [![Blender][Blender.com]][Blender-url]
+[![Unity](https://img.shields.io/badge/Unity-%23000000.svg?logo=unity&logoColor=white)](#)
+[![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#)
+[![Vuforia](https://img.shields.io/badge/Vuforia-Engine-00C853?style=for-the-badge&logoColor=white)](https://developer.vuforia.com/)
+[![Blender](https://img.shields.io/badge/Blender-%23F5792A.svg?logo=blender&logoColor=white)](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
