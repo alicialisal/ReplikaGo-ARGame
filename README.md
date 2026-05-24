@@ -1,10 +1,10 @@
 # Replika-Go
 
-[![Contributors][contributors-shield]](https://github.com/alicialisal/ReplikaGo-ARGame/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/alicialisal/ReplikaGo-ARGame.svg?style=for-the-badge)](https://github.com/alicialisal/ReplikaGo-ARGame/graphs/contributors)
 
 [contributors-shield]: https://img.shields.io/github/contributors/alicialisal/ReplikaGo-ARGame.svg?style=for-the-badge]
 
-[![LinkedIn Alicia Lisal](https://img.shields.io/badge/LinkedIn-Alicia%20Lisal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alicialisal/) [![LinkedIn Chaiden](https://img.shields.io/badge/LinkedIn-Chaiden-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chaidenfoanto/?locale=en) [![LinkedIn Derick Norlan](https://img.shields.io/badge/LinkedIn-Derick%20Norlan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dericknorlan/) [![LinkedIn Franklin Jaya](https://img.shields.io/badge/LinkedIn-Franklin%20Jaya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/franklin-jaya-6a3697364/) [![LinkedIn Michael Christianto](https://img.shields.io/badge/LinkedIn-Michael%20Christianto-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-christianto-s-13b1a6296/)
+[![LinkedIn Alicia Lisal](https://img.shields.io/badge/LinkedIn-Alicia%20Lisal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&logoWidth=20)](https://www.linkedin.com/in/alicialisal/) [![LinkedIn Chaiden Foanto](https://img.shields.io/badge/LinkedIn-Chaiden%20Foanto-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&logoWidth=20)](https://www.linkedin.com/in/chaidenfoanto/?locale=en) [![LinkedIn Derick Norlan](https://img.shields.io/badge/LinkedIn-Derick%20Norlan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&logoWidth=20)](https://www.linkedin.com/in/dericknorlan/) [![LinkedIn Franklin Jaya](https://img.shields.io/badge/LinkedIn-Franklin%20Jaya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&logoWidth=20)](https://www.linkedin.com/in/franklin-jaya-6a3697364/) [![LinkedIn Michael Christianto](https://img.shields.io/badge/LinkedIn-Michael%20Christianto-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&logoWidth=20)](https://www.linkedin.com/in/michael-christianto-s-13b1a6296/)
 
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
 
