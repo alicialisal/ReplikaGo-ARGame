@@ -99,7 +99,7 @@ Example packages used in the project:
 ```json
 {
   "dependencies": {
-    "com.ptc.vuforia.engine": "10.x",
+    Unity 6 (6000.2.2f1)
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.inputsystem": "1.7.0",
