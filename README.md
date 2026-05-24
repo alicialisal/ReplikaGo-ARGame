@@ -54,16 +54,19 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This project is an educational museum game developed for the Balla Lompoa Museum to provide an interactive and immersive learning experience for visitors through gameplay and Augmented Reality (AR) technology.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+The game combines historical exploration, puzzle-solving, object hunting, and AR interactions to help users learn about cultural artifacts and museum history in a more engaging way.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people who have contributed to expanding this template!
+Main features include:
 
-Use the `BLANK_README.md` to get started.
+- Educational puzzle challenges
+- Museum object hunting gameplay
+- Interactive Augmented Reality (AR) system
+- Hidden easter eggs inside the museum
+- Historical learning through gamification
+- Immersive exploration experience
+- Historical quiz of balla lompoa
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,37 +74,42 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This backend project was built with php followingg technologies:
+This game project was developed using the following technologies:
 
-* [![Laravel][Laravel.com]][Laravel-url]
+* [![Unity][Unity.com]][Unity-url]
+* [![CSharp][CSharp.com]][CSharp-url]
+* [![Vuforia][Vuforia.com]][Vuforia-url]
+* [![Blender][Blender.com]][Blender-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Project Dependencies
 
-This project uses:
+This project uses several Unity packages and supporting libraries:
 
-- Laravel Composer
-- Laravel Sanctum
-- Swagger
-- Laraavel Reverb
-- Laravel Tinker
+- Unity Engine
+- Vuforia Engine
+- TextMeshPro
+- Cinemachine
+- Unity Input System
+- XR Interaction Toolkit
+- Blender 3D Assets
 
-Example imports used in the project:
+Example packages used in the project:
 
-```laravel
-"require": {
-        "php": "^8.2",
-        "darkaonline/l5-swagger": "^9.0",
-        "laravel/framework": "^11.31",
-        "laravel/reverb": "^1.0",
-        "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9",
-        "otnansirk/laravel-dana": "^2.3",
-        "thiagoprz/eloquent-composite-key": "^1.0",
-        "zircote/swagger-php": "^5.1"
-    },
+```json
+{
+  "dependencies": {
+    "com.ptc.vuforia.engine": "10.x",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.cinemachine": "2.9.7",
+    "com.unity.inputsystem": "1.7.0",
+    "com.unity.xr.interaction.toolkit": "2.5.2"
+  }
+}
 ```
+
+---
 
 ## Getting Started
 
