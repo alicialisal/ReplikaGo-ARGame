@@ -78,10 +78,7 @@ Main features include:
 
 This game project was developed using the following technologies:
 
-[![Unity](https://img.shields.io/badge/Unity-%23000000.svg?logo=unity&logoColor=white)](#)
-[![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#)
-[![Vuforia](https://custom-icon-badges.demolab.com/badge/Vuforia-Engine-00C853.svg?logo=vr&logoColor=white)](https://developer.vuforia.com/)
-[![Blender](https://img.shields.io/badge/Blender-%23F5792A.svg?logo=blender&logoColor=white)](#)
+[![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)](#) [![CSharp](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)](#) [![Vuforia](https://img.shields.io/badge/Vuforia-00C853?style=for-the-badge&logoColor=white)](https://developer.vuforia.com/) [![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
