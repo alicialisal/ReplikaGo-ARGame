@@ -90,7 +90,6 @@ This project uses several Unity packages and supporting libraries:
 - Unity Engine
 - Vuforia Engine
 - TextMeshPro
-- Cinemachine
 - Unity Input System
 - XR Interaction Toolkit
 - Blender 3D Assets
