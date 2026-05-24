@@ -225,7 +225,7 @@ Franklin Jaya - [@franklinjaya_](https://www.instagram.com/franklinjaya_/) - fra
 
 ## Development Team
 
-Proyek ini dikembangkan oleh tim **Replika-Go Team**, yang terdiri dari:
+This Project are developed by **Replika-Go Development Team**, which consist of five people:
 
 1. **Alicia Lisal**
 2. **Chaiden Richardo Foanto**
