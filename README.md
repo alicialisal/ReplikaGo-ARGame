@@ -14,7 +14,6 @@
 </p>
 <br />
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -27,24 +26,33 @@
       </ul>
     </li>
     <li>
+      <a href="#publication">Publication</a>
+      <ul>
+        <li><a href="#research-title">Research Title</a></li>
+        <li><a href="#research-overview">Research Overview</a></li>
+        <li><a href="#research-contributions">Research Contributions</a></li>
+        <li><a href="#publication-link">Publication Link</a></li>
+      </ul>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#build-apk">Build APK</a></li>
       </ul>
     </li>
     <li>
       <a href="#usage">Usage</a>
     </li>
     <li>
-      <a href="#development-team">Development Team</a>
+      <a href="#contact">Contact</a>
     </li>
     <li>
-      <a href="#contact">Contact</a>
+      <a href="#development-team">Development Team</a>
     </li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -91,11 +99,7 @@ This project uses several Unity packages and supporting libraries:
 
 ## Publication
 
-This project was documented as part of a research and conference publication discussing the implementation of Augmented Reality (AR) technology and gamification for interactive museum education at Balla Lompoa Museum.
-
-<p align="center">
-  <img src="conference.jpg" width="300">
-</p>
+This project was documented as part of a research publication discussing the implementation of Augmented Reality (AR) technology and gamification for interactive museum education at Balla Lompoa Museum.
 
 ### Research Title
 
