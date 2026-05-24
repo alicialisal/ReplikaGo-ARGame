@@ -11,6 +11,9 @@
 
 
 <!-- PROJECT LOGO --> 
+<p align="center">
+  <img src="logo.png" width="700" style="border-radius: 20px;">
+</p>
 <br />
 
 
