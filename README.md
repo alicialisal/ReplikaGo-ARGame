@@ -224,7 +224,7 @@ System workflow:
 
 Franklin Jaya - [@franklinjaya_](https://www.instagram.com/franklinjaya_/) - franklinjaya827@gmail.com
 
-Project Link: 
+Project Link: https://github.com/alicialisal/ReplikaGo-ARGame
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
